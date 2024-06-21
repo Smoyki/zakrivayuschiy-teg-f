@@ -118,6 +118,69 @@
 }
 
 .theme-menu__button {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  padding: 0;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  font-family: var(--font_type_accent), fantasy;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: currentColor;
+  top: 100%;
+  margin-top: 1px;
+  transition: transform 0.3s ease;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.theme-menu__button::before {
+  right: 100%;
+  margin-inline-end: 4px;
+  top: 0;
+  position: absolute;
+  content: "▶";
+  color: transparent;
+  pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+  animation: infinite arrow 0.5s ease-in-out alternate;
+  color: currentColor;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+
+/*  
+.theme-menu__button {
   padding: 0;
   text-transform: uppercase;
   background: none;
@@ -166,6 +229,9 @@
 .theme-menu__button:focus-visible::after {
   transform: translateX(0);
 }
+*/
+
+
 
 
 /* Photo filters */
@@ -375,13 +441,12 @@
 }
 
 .save-button {
-  background: var(--page-background);
+  padding: 15px 20px;
+  margin: 0 auto;
   display: flex;
   gap: 8px;
   align-items: center;
-  padding-block: 15px;
-  padding-inline: 19px 21px;
-  align-self: center;
+  background: var(--page-background);
 }
 
 @media (width <= 450px) {

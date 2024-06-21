@@ -19,9 +19,9 @@
 
 /* Body */
 
-.page {
+/* .page { */
   font-variation-settings: var(--text-font-weight);
- /* padding-top: 100px;         При маленьком размере убрать */
+
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--text-color);
@@ -47,6 +47,24 @@
   background-attachment: fixed;
   background-size: cover;
 }
+*/
+.page {
+  width: calc(100vw * (700 / 1440));
+  min-width: 430px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: var(--themes-main-color);
+  font-family: var(--font-main);
+  background: var(--background);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-variation-settings: "wght" var(--themes-font-weight-content);
+}
+
+
+
+
 
 /* Header */
 
@@ -375,13 +393,12 @@
 }
 
 .save-button {
-  background: var(--page-background);
+  padding: 15px 20px;
+  margin: 0 auto;
   display: flex;
   gap: 8px;
   align-items: center;
-  padding-block: 15px;
-  padding-inline: 19px 21px;
-  align-self: center;
+  background: var(--page-background);
 }
 
 @media (width <= 450px) {

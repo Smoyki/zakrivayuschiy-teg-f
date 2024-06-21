@@ -141,13 +141,14 @@
 
 .theme-menu__button::after {
   content: "";
-  display: block;
-  width: 100%;
+  position: absolute;
   height: 2px;
-  background-color: var(--text-color);
-  opacity: 0.6;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: currentColor;
+  top: 100%;
+  margin-top: 1px;
   transition: transform 0.3s ease;
-  transform: translateX(-100%);
 }
 
 .theme-menu__button:hover {
@@ -375,13 +376,12 @@
 }
 
 .save-button {
-  background: var(--page-background);
+  padding: 15px 20px;
+  margin: 0 auto;
   display: flex;
   gap: 8px;
   align-items: center;
-  padding-block: 15px;
-  padding-inline: 19px 21px;
-  align-self: center;
+  background: var(--page-background);
 }
 
 @media (width <= 450px) {

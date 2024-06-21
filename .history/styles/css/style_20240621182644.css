@@ -382,7 +382,6 @@
   padding-block: 15px;
   padding-inline: 19px 21px;
   align-self: center;
-}
 
 @media (width <= 450px) {
   .save-button {

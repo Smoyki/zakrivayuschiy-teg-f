@@ -375,13 +375,12 @@
 }
 
 .save-button {
-  background: var(--page-background);
+  padding: 15px 20px;
+  margin: 0 auto;
   display: flex;
   gap: 8px;
   align-items: center;
-  padding-block: 15px;
-  padding-inline: 19px 21px;
-  align-self: center;
+  background: var(--page-background);
 }
 
 @media (width <= 450px) {
@@ -514,7 +513,7 @@
   }
 }
 
-/* Modal Кнопки */
+/* Modal Кнопки 
 
 .dialog {
   font-family: var(--fantasy-font-family);
@@ -577,3 +576,5 @@
     padding: 32px 38px;
   }
 }
+*/
+
