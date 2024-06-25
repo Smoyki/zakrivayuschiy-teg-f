@@ -45,7 +45,6 @@
     );
   background-attachment: fixed;
   background-size: cover;
-  font-variation-settings: 'wght' var(--font-weight-text) var(--font-weight-title);
 }
 
 /* Header */
@@ -420,7 +419,7 @@ Photo filters
   display: flex;
   flex-direction: column;
   gap: 26px;
-  padding: 0px 25px 0px 26px;
+  padding: 0px 25px 0px 26px; 
   margin-block-end: 25px;
 
   /* 
