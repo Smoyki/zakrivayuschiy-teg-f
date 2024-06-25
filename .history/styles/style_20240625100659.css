@@ -59,7 +59,7 @@
   padding: 126px 0 23px;
   background: var(--header-background);
   border: 2px solid var(--stroke-color);
-  margin-block-end: 100px;
+  margin-block-end: 100px;    
   margin-block-start: 100px;
   gap: 20px;
 
