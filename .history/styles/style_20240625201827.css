@@ -39,7 +39,7 @@
   align-content: normal;
   font-family: var(--fantasy-font-family);
   text-align: center;
-  padding: 144px 0 23px;  /* 126px */
+  padding: 126px 0 23px;  /*
   background: var(--header-background);
   border: 2px solid var(--stroke-color);
   margin-block-end: 100px;
@@ -78,11 +78,11 @@
   padding-left: 18px;
 }
 
-/* @media (width <= 375px) { 
+@media (width <= 375px) {
   .theme-menu__list {
     margin: 0 41.1%;
   }
-} */
+}
 
 .theme-menu__item {
   position: relative;

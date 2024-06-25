@@ -78,11 +78,11 @@
   padding-left: 18px;
 }
 
-/* @media (width <= 375px) { 
+/* @media (width <= 375px) { */
   .theme-menu__list {
     margin: 0 41.1%;
   }
-} */
+}
 
 .theme-menu__item {
   position: relative;

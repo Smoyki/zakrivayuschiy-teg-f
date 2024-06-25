@@ -1,6 +1,9 @@
-/* Theme variables */
+/* Root variables */
 
-:root.theme-light {
+:root {
+  --main-font-family: Inter, sans-serif;
+  --fantasy-font-family: "Press Start 2P", fantasy;
+  --heart-color: #ff0000;
   --page-background: #fff;
   --background-color: #d3d3d3;
   --background-color-start: #e7e7e7;
@@ -12,27 +15,6 @@
   --mix-blend-color: var(--page-background);
   --stroke-color: var(--text-color);
   --label-stroke-color: var(--page-background);
-  --background: repeating-linear-gradient(90deg, #d3d3d3 0px 2px, transparent 2px 4px),
-  repeating-linear-gradient(180deg, #d3d3d3 0px 2px, transparent 2px 4px),
-  linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
-}
-
-:root.theme-dark {
-  --page-background: #000;
-  --background-color: var(--page-background);
-  --background-color-start: #007f0c;
-  --background-color-end: #004306;
-  --title-font-weight: "wght" 785;
-  --text-font-weight: "wght" 465;
-  --header-background: var(--page-background);
-  --text-color: #00cc14;
-  --mix-blend-color: var(--text-color);
-  --stroke-color: var(--text-color);
-  --label-stroke-color: var(--page-background);
-  --background: repeating-linear-gradient(90deg, #000 0px 2px, transparent 2px 4px),
-  repeating-linear-gradient(180deg, #000 0px 2px, transparent 2px 4px),
-  linear-gradient(180deg, #007f0c 0%, #004306 100%);
-  
 }
 
 @media (prefers-color-scheme: light) {
@@ -48,9 +30,6 @@
     --mix-blend-color: var(--page-background);
     --stroke-color: var(--text-color);
     --label-stroke-color: var(--page-background);
-    --background: repeating-linear-gradient(90deg, #d3d3d3 0px 2px, transparent 2px 4px),
-    repeating-linear-gradient(180deg, #d3d3d3 0px 2px, transparent 2px 4px),
-    linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
   }
 }
 
@@ -67,8 +46,5 @@
     --mix-blend-color: var(--text-color);
     --stroke-color: var(--text-color);
     --label-stroke-color: var(--page-background);
-    --background: repeating-linear-gradient(90deg, #000 0px 2px, transparent 2px 4px),
-    repeating-linear-gradient(180deg, #000 0px 2px, transparent 2px 4px),
-    linear-gradient(180deg, #007f0c 0%, #004306 100%);
   }
 }
