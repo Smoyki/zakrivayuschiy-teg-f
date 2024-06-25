@@ -21,6 +21,7 @@
 
 .page {
   font-variation-settings: var(--text-font-weight);
+ /* padding-top: 100px;         При маленьком размере убрать */
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--text-color);

@@ -21,6 +21,7 @@
 
 .page {
   font-variation-settings: var(--text-font-weight);
+ /* padding-top: 100px;         При маленьком размере убрать */
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--text-color);
@@ -51,11 +52,14 @@
 
 
 .header {
+  /* Старое */
   display: flex;
   flex-direction: column;
   align-content: normal;
   font-family: var(--fantasy-font-family);
   text-align: center;
+  /* margin: 100px 0; */
+  /* padding: 143px 0 23px; */
   padding: 126px 0 23px;
   background: var(--header-background);
   border: 2px solid var(--stroke-color);
@@ -74,13 +78,20 @@
 
 .header__link {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  /* text-transform: uppercase; */
+  /* font-size: 65px; */
+  /* margin-block-end: 0px; */
   text-transform: uppercase;
-
+  /* transform: translateX(-4px); */
 }
 
 .header__title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
+  /* margin: 20px 0 25px; */
+  /* font-size: 23px; */
+ 
+
 }
 
 
@@ -89,6 +100,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  /* width: -moz-min-content; */
   width: min-content;
   text-align: start;
   margin: auto;
@@ -307,6 +319,25 @@
   font-size: 14px;
   position: relative;
   overflow: hidden;
+
+  /*  *
+  color: var(--mix-blend-color);
+  background: none;
+  border: 2px solid var(--stroke-color);
+  cursor: pointer;
+  transition: 0.5s ease-in-out; */
+
+  /* position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 2px solid var(--stroke-color);
+  cursor: pointer;
+  font-family: var(--fantasy-font-family);
+  font-size: 14px;
+  transition: 0.5s ease-in-out;
+  */
 }
 
 .button::before {
@@ -377,6 +408,10 @@
 /* Section */
 
 .section {
+  /* display: inherit; Было?!
+  flex-direction: inherit;
+  gap: inherit; */
+
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -398,12 +433,23 @@
 
 /* Переделать секцию */
 .card__image {
+  /*  
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+
+  width: 100%;
+  object-fit: cover; */
+  
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   aspect-ratio: 1 / 1;
+  /* Здесь я остановился */
 }
 
 .card__image-container {
@@ -420,7 +466,7 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
-  padding: 0px 25px 0px 26px; 
+  padding: 0px 25px 0px 26px;  /* padding: 26px 25px; */
   margin-block-end: 25px;
 
   /* Добавлю шрифты */
@@ -458,7 +504,7 @@
   align-items: center;
   gap: 6px;
   justify-content: end;
-  margin-block-end: 1px;
+  margin-block-end: 1px;  /* !! */
 }
 
 @media (width <= 375px) {

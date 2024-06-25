@@ -21,6 +21,7 @@
 
 .page {
   font-variation-settings: var(--text-font-weight);
+ /* padding-top: 100px;         При маленьком размере убрать */
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--text-color);
@@ -458,7 +459,7 @@
   align-items: center;
   gap: 6px;
   justify-content: end;
-  margin-block-end: 1px;
+  margin-block-end: 1px;  /* !! */
 }
 
 @media (width <= 375px) {
