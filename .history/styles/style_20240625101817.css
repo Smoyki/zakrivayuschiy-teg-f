@@ -45,7 +45,7 @@
     );
   background-attachment: fixed;
   background-size: cover;
-  font-variation-settings: 'wght' var(--font-weight-text);
+  font-variation-settings: 'wght' var(--font-weight-text)
 }
 
 /* Header */
