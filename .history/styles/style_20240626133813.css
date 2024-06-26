@@ -190,6 +190,16 @@
   top: 27px;
 }
 
+/*  
+@supports (text-stroke: 1px var(--label-stroke-color)) or
+  (-webkit-text-stroke: 1px var(--label-stroke-color)) {
+  .image-label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--label-stroke-color);
+    text-stroke: 1px var(--label-stroke-color);
+  }
+}
+*/
 
 @supports (
   (
@@ -423,6 +433,7 @@
   padding: 0px 25px 0px 26px;
   margin-block-end: 25px;
   font-variation-settings: 'wght' var(--font-weight-text);
+  /* font-weight: var(--text-font-weight); */
   /* 
   font-family: 'Inter';
   font-style: normal;

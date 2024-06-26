@@ -94,15 +94,14 @@
 
 .like-icon.is-liked .contour {
   fill: var(--heart-color);
-  transition: fill 0.3s 0.06s linear;
+  
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-color);
-  transition: fill 0.3s 0.05s linear;
+  transition-delay: 0.03s;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-color);
-  transition: fill 0.3s linear;
 }

@@ -104,5 +104,4 @@
 
 .like-icon.is-liked .core {
   fill: var(--heart-color);
-  transition: fill 0.3s linear;
 }
