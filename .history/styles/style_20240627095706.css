@@ -421,7 +421,7 @@
   gap: 26px;
   padding: 0px 25px 0px 26px;
   margin-block-end: 25px;
-  font-weight: 'wght' var(--font-weight-text);
+  font-variation-settings: 'wght' var(--font-weight-text);
   /* 
   font-family: 'Inter';
   font-style: normal;
